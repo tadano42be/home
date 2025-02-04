@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>썰게</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root">
+    <div class="new-post-container">
+        <input type="text" id="new-post-title" placeholder="제목" />
+        <input type="text" id="new-post-tags" placeholder="태그 (,로 구별)"/>
+        <textarea id="new-post-content" placeholder="내용"></textarea>
+        <button id="create-post-btn">Create Post</button>
+    </div>
+    <div class="board-container">
+        <h2>Latest Posts</h2>
+        <div id="post-board">
+            <!-- Latest post titles will be here -->
+        </div>
+        <div id="pagination">
+            <!-- Pagination buttons will be here -->
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="제목/태그로 검색" />
+            <button id="search-btn">Search</button>
+            <button id="show-all-btn">Return</button>
+        </div>
+    </div>
+    <div class="thread-container" id="thread-container">
+        <!-- Selected post will be displayed here -->
+    </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
+
