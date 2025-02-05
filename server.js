@@ -6,7 +6,7 @@ const Post = require('./models/Post');
 const app = express();
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://tadano42be:<qlqjs0980Qq>@vr-ssul.81vku.mongodb.net/?retryWrites=true&w=majority&appName=vr-ssul', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Add this route to handle adding comments
 app.post('/posts/:id/comments', async (req, res) => {
